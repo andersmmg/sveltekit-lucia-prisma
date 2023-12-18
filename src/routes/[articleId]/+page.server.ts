@@ -25,7 +25,7 @@ export const load: PageServerLoad = async ({ params, locals }) => {
 	}
 
 	return {
-		article: getArticle(user.userId)
+		article: await getArticle(user.userId)
 	}
 }
 
